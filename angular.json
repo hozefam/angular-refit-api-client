@@ -2,6 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "cli": {
+    "schematicCollections": [
+      "angular-eslint"
+    ]
+  },
   "projects": {
     "refit-api-client": {
       "projectType": "library",
@@ -32,6 +37,16 @@
               "zone.js",
               "zone.js/testing"
             ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/refit-api-client/**/*.ts",
+              "projects/refit-api-client/**/*.html"
+            ],
+            "eslintConfig": "projects/refit-api-client/eslint.config.js"
           }
         }
       }
@@ -121,6 +136,16 @@
               "projects/test-app/src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/test-app/**/*.ts",
+              "projects/test-app/**/*.html"
+            ],
+            "eslintConfig": "projects/test-app/eslint.config.js"
           }
         }
       }
