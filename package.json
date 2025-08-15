@@ -1,6 +1,23 @@
 {
-  "name": ".",
-  "version": "0.0.0",
+  "name": "angular-refit-api-client",
+  "version": "1.0.0",
+  "description": "The elegant and type-safe way to build REST clients in Angular.",
+  "author": {
+    "name": "Hozefa Mangalorewala",
+    "email": "hozefam@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "refit",
+    "api",
+    "client",
+    "rest",
+    "http"
+  ],
+  "peerDependencies": {
+    "@angular/core": "^19.2.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
